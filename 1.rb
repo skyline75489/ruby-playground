@@ -1,2 +1,5 @@
-r = [1,3,5,7].inject { |sum, element| sum+element }
-p r
+b = -> { puts "Hello" }
+b.call
+
+c = lambda { puts "I'm in lambda" }
+c.call

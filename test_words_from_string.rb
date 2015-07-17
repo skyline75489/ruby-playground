@@ -1,3 +1,5 @@
+#!/bin/ruby
+
 require_relative 'words_from_string.rb'
 require 'test/unit'
 class TestWordsFromString < Test::Unit::TestCase
