@@ -19,7 +19,11 @@ def opt_args(a, *x, b)
 end
 
 def downer(string)
-    string.downcase
+    string.downcase!
+end
+
+def say_goodnignt(name)
+    "Good night #{name}"
 end
 
 opt_args(1, 2, 3, 4, 5)
@@ -27,3 +31,11 @@ opt_args(1, 2, 3, 4, 5)
 a = "HELLO"
 downer(a)
 puts a
+puts say_goodnignt "Me"
+
+puts %w{ this is an array of string}
+
+puts 1.class
+puts String.class.class
+puts false.class
+STDOUT.flush 
