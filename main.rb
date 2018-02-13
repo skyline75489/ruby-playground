@@ -1,3 +1,5 @@
+require 'pp'
+
 b = -> { puts "Hello" }
 b.call
 
@@ -6,7 +8,7 @@ c.call
 
 var1 = 5
 var2 = '2'
-puts var1 + var2.to_i
+pp var1 + var2.to_i
 
 a = 'hello'
 a << 'world'
@@ -31,15 +33,10 @@ opt_args(1, 2, 3, 4, 5)
 a = "HELLO"
 downer(a)
 
-puts a
-puts say_goodnignt "Me"
+pp a
+pp say_goodnignt "Me"
 
-puts %w{ this is an array of string}
-
-puts 1.class
-puts String.class
-puts false.class
-STDOUT.flush 
+pp %w{ this is an array of string}
 
 def mtdarray
     5.times do |num|
@@ -49,4 +46,4 @@ def mtdarray
 end
 
 num = mtdarray
-puts num
+pp num
