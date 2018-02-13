@@ -30,12 +30,23 @@ opt_args(1, 2, 3, 4, 5)
 
 a = "HELLO"
 downer(a)
+
 puts a
 puts say_goodnignt "Me"
 
 puts %w{ this is an array of string}
 
 puts 1.class
-puts String.class.class
+puts String.class
 puts false.class
 STDOUT.flush 
+
+def mtdarray
+    5.times do |num|
+        square = num * num
+        return square
+    end
+end
+
+num = mtdarray
+puts num
