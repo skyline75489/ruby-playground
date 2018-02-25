@@ -45,5 +45,27 @@ def mtdarray
     end
 end
 
-num = mtdarray
-pp num
+year = 2000
+leap = case
+    when year % 400 == 0 then true
+    when year % 100 == 0 then false
+    when year % 4 == 0
+    end
+pp leap
+
+def call_block_test
+    yield('hello', 99)
+end
+
+call_block_test do |str, num|
+    pp str + ' ' + num.to_s
+end
+
+x = 10
+
+5.times do |y; x|
+    x = y
+    pp "x inside the block : #{x}"
+end
+
+pp "x outside the block: #{x}"
