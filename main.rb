@@ -69,3 +69,21 @@ x = 10
 end
 
 pp "x outside the block: #{x}"
+
+class Dog
+    def initialize(breed, name)
+        @breed = breed
+        @name = name
+    end
+
+    def bark
+        pp "Ruff! Ruff!"
+    end
+
+    def display
+        puts "I am of #{@breed} and my name is #{@name}"
+    end
+end
+
+d = Dog.new("Labrador", "Benzy")
+d.display
