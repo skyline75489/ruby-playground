@@ -87,3 +87,13 @@ end
 
 d = Dog.new("Labrador", "Benzy")
 d.display
+
+def func_test some_proc, arg
+    some_proc.call arg
+end
+
+p = lambda do |a|
+    pp "asfasdf"
+end
+
+func_test(p, 5)
